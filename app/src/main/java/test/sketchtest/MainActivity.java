@@ -12,10 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //Intent intent = new Intent(this, DrawingPaneActivity.class);
-        //this.startActivityForResult(intent,0);
-
+        
         TextView boilingpointK = (TextView) findViewById(R.id.click);
 
         boilingpointK.setOnClickListener(new View.OnClickListener() {
