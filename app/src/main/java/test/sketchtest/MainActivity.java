@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-        TextView boilingpointK = (TextView) findViewById(R.id.click);
 
+        TextView boilingpointK = (TextView) findViewById(R.id.click);
+        
         boilingpointK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
