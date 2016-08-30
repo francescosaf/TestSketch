@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom|left"
+                android:background="#ffffff"
+                tools:context=".DrawingPaneActivity">
+
+    <ImageView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+    <ImageView
+            android:id="@+id/drawingImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <Button
+                android:id="@+id/curvedLineButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="toolButtonClicked"
+                android:text="Curved"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        <Button
+                android:id="@+id/straightLineButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="toolButtonClicked"
+                android:text="Straight"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        <Button
+                android:id="@+id/textInputButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="toolButtonClicked"
+                android:text="Text"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        <Button
+                android:id="@+id/squareButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_button"
+                android:onClick="toolButtonClicked"
+                android:text="Square"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dp"
+            android:onClick="onClickRedo">
+
+        <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:onClick="cancelButtonClicked"
+                android:text="Cancel"
+                android:background="@drawable/round_button"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        <Button
+                android:id="@+id/saveButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/round_button"
+                android:onClick="saveButtonClicked"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+
+        <Button
+                android:id="@+id/clearButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:onClick="clearButtonClicked"
+                android:text="Clear"
+                android:background="@drawable/round_button"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/undoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/eraseButton"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/round_button"
+            android:onClick="onClickUndo"
+            android:text="Undo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+    <Button
+            android:id="@+id/redoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/undoButton"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/round_button"
+            android:onClick="onClickRedo"
+            android:text="Redo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+    <Button
+            android:id="@+id/eraseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/undoButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/round_button"
+            android:onClick="toolButtonClicked"
+            android:text="Erase"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"/>
+
+</RelativeLayout>
